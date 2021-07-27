@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script async src="https://arc.io/widget.min.js#oPWLNyfq"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="shortcut icon" type="icon/ico" href="./icon/favicon.ico" />
+<link rel="stylesheet" href="https://pearos-ui-kit.netlify.app/css/style.css">
+<link rel="stylesheet" href="https://pearos-ui-kit.netlify.app/css/index.css">
+<link rel="stylesheet" href="./preloader.css">
+<script src="./script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="GeckoOS is a linux distribution that aims for UI and UX, offering a mac like feeling, now even on older PCs. Why get a new PC when you have Gecko OS?">
+<title>pearOS - Official Website</title>
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://pearos.xyz">
+<meta property="og:title" content="pearOS - Official Website">
+<meta property="og:description" content="GeckoOS is a linux distribution that aims for UI and UX, offering a beautiful and high performance like feeling, now even on older PCs. Why get a new PC when you have Gecko OS? Try it now, it's free!">
+<meta property="og:image" content="https://pearos.xyz/images/thiccsur.png">
+<script type="text/javascript" src="js/adbdetect.packed.js"></script>
+<script type="text/javascript" src="./abdetect.js"></script>
+<script type="text/javascript" src="./preloader.js"> </script>
+</head>
+<body>
+<div class="preload-wrapper">
+<div id="preloader_7"></div>
+<div class="loader-section section-left"></div>
+<div class="loader-section section-right"></div>
+</div>
+<body>
+<header>
+<div class="logo">
+<a href="#"><img src="./images/logo.png" class="logo"></a>
+</div>
+<div class="toggle" onclick="toogleMenu();"></div>
+<ul class="navigation">
+<li><a href="./versions/">Versions</a></li>
+<li><a href="./how-to-install/">Install</a></li>
+<li><a href="./contact/">Contact</a></li>
+<li><a href="./support/">Support</a></li>
+<li><a href="./donate/">Donate</a></li>
+<li id="login"><a href="https://id.pearos.xyz">Login</a></li>
+</ul>
+<div class="login">
+<a href="https://id.pearos.xyz">Login</a>
+</div>
+</header>
+<div class="notification">
+<div class="body">
+<h2>Gecko OS is still in development.</h2>
+<p>Gecko OS is still in development, updates will be announced soon.</a></p>
+<div class="button" onclick="expand()">Read&nbsp;more</div>
+</div>
+<div class="close" onclick="closeNotification()"><span class="material-icons-outlined">close</span></div>
+</div>
+<div class="content">
+<div class="div">
+<h1>pearOS</h1>
+<p class="desc">An entirely free operating system, with a lot of<br> useful features, a beautiful design, and regular <br>updates.</p>
+<p class="btn">See how to get yours now:</p>
+<button onclick="redirect()">Install</button>
+<img src="./images/laptop.png" width="1024px" height="576px" alt="A laptop running GeckoOS" class="laptop">
+</div>
+</div>
+<div class="footer">
+<hr>
+<a class="copyright" href="/cdn-cgi/l/email-protection#95f6fafbe1f4f6e1d5f4fbf1e7f0fcf8e0fbe1f0f4fbbbedecef">Copyright © 2021 Horizon Team. All rights reserved.</a>
+<a class="privacy" id="legal" href="https://privacy.pearos.xyz/">Privacy Policy</a>
+<a class="tos" id="legal" href="./terms-of-use/">Terms of use</a>
+</div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript" src="js/adbdetect.packed.js"></script>
+<script type="text/javascript">
+var adBD = adBDetect().setup({
+    debug:true,
+    setPage:'ad-detect.html',
+    wait:0,
+});
+adBD.start();
+if(adBD.isDetected()) {
+  
+}
+</script>
+<script>
+function redirect(){
+    window.location.replace('./how-to-install')
+}
+
+function closeNotification(){
+    const notification = document.querySelector('.notification');
+    notification.classList.add('closed');
+}
+
+function expand(){
+    const notification = document.querySelector('.notification');
+    const body = document.querySelector('.body');
+    const p = document.querySelector('.body p');
+    const h2 = document.querySelector('h2');
+    body.classList.toggle('expanded');
+    p.classList.toggle('expanded');
+    h2.classList.toggle('expanded');
+    notification.classList.toggle('expanded');
+}
+</script>
+</body>
+</html>
